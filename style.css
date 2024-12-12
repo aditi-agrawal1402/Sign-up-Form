@@ -1,16 +1,20 @@
 *{
     box-sizing:border-box;
+    font-family: "Inter";
 }
 
 .container{
     display: flex;
 }
 
-
 .left{
     background-image:url("halie-west-25xggax4bSA-unsplash.jpg");
     width: 40vw;
     height: 100vh;
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
 }
 
 .logo{
@@ -18,11 +22,17 @@
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 200px;
     height: 80px;
-    
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+#thought{
+    height: 40px;
+    color: white;
 }
 
 .right{
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(251, 252, 252);
     width: 60vw;
 }
 
@@ -31,19 +41,64 @@
     padding: 40px;
 }
 
+.top{
+    font-weight: 700;
+    font-size: 25px;
+}
+
 .main{
     padding: 10px 50px;
     background-color: white;
+    box-shadow: 5px 5px 5px rgb(203, 202, 202);
 }
 
 .inputs{
     display: flex;
     flex-wrap: wrap;
+    font-size: 15px;
 }
+
 
 .box{
     display: flex;
     flex-direction: column;
     margin-right: 150px;
     margin-bottom: 20px;
+    gap: 3px;
+}
+
+input{
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid rgb(96, 96, 255);
+    box-shadow:5px 5px 5px rgb(172, 172, 255);
+}
+
+input:invalid{
+    border: 2px solid rgb(252, 88, 88);
+    box-shadow: 5px 5px 5px rgb(252, 95, 95);
+}
+
+button{
+    height: 45px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(15, 86, 15);
+    color: white;
+    box-shadow: 2px 2px 5px gray;
+    font-weight: 600;
+}
+
+a{
+    color: rgb(15, 86, 15);
+    font-weight: 600;
+    text-decoration: none;
 }
